@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { View, Button } from 'react-native';
-import Calendar from 'react-native-calendar'
+import Calendar from 'react-native-calendar';
+import moment from 'moment';
 
 const customStyle = {
   hasEventCircle: {
@@ -51,7 +52,7 @@ export default class App extends Component {
         onDateSelect={this.toggleEvent}
         customStyle={customStyle}
       />
-      <Button title="Schedule" onPress={() => {}} />
+      <Button title="Schedule" onPress={() => { console.log(this.state.dates) }} />
       </ View>
     )
   }
