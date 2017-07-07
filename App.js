@@ -5,7 +5,8 @@ import CalendarScreen from './CalendarScreen';
 import HomeScreen from './HomeScreen';
 import NewStudentScreen from './NewStudentScreen';
 import StudentScreen from './StudentScreen';
-import TeacherScreen from './TeacherScreen'
+import TeacherScreen from './TeacherScreen';
+import StudentScheduleScreen from './StudentScheduleScreen';
 import { StackNavigator } from 'react-navigation';
 
 const App = StackNavigator({
@@ -13,6 +14,7 @@ const App = StackNavigator({
   Calendar: { screen: CalendarScreen },
   NewStudent: { screen: NewStudentScreen },
   Student: { screen: StudentScreen },
+  StudentSchedule: { screen: StudentScheduleScreen },
   AllStudents: { screen: AllStudentsScreen },
   Teacher: { screen: TeacherScreen }
 });

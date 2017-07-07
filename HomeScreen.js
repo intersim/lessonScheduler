@@ -23,7 +23,7 @@ export default class HomeScreen extends Component {
   render() {
     const { navigate } = this.props.navigation;
     return (
-      <View>
+      <View style={{ padding: 20 }}>
         <Button 
           title="Add New Student" 
           onPress={() => navigate('NewStudent')}
@@ -35,8 +35,8 @@ export default class HomeScreen extends Component {
         {/*<Button 
           title="Lesson Calendar" 
           onPress={() => navigate('Calendar')}
-        />*/}
-        {/*<Button 
+        />
+        <Button 
           title="Student Profile" 
           onPress={() => navigate('Student')}
         />*/}
